@@ -2,17 +2,24 @@ public abstract class BankAccount implements IBankActions{
     private String accountNumber;
     private String holderName;
     private double balance;
+    private String pinCode;
 
     public BankAccount(){
         this.accountNumber = "";
         this.holderName = "";
         this.balance = 0.0;
+        this.pinCode = "";
     }
 
-    public BankAccount(String accountName, String holderName, double balance){
+    public BankAccount(String accountName, String holderName, double balance, String pinCode){
         this.accountNumber = accountName;
         this.holderName = holderName;
         this.balance = balance;
+        this.pinCode = pinCode;
+    }
+
+    public boolean verifyPin(String inputPin){
+        return this.pinCode.equals(inputPin);
     }
 
     public String getAccountNumber(){

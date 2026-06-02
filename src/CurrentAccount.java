@@ -1,8 +1,8 @@
 public class CurrentAccount extends BankAccount{
     public double overdraftLimit; // type of acc that allows you to get negative balance (overdraft)
 
-    public CurrentAccount(String accountNumber, String holderName, double balance, double overdraftLimit){
-        super(accountNumber, holderName, balance);
+    public CurrentAccount(String accountNumber, String holderName, double balance, double overdraftLimit, String pinCode){
+        super(accountNumber, holderName, balance, pinCode);
         this.overdraftLimit = overdraftLimit;
     }
 

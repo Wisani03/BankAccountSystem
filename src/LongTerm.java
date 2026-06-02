@@ -1,6 +1,6 @@
 public class LongTerm extends FixedAmount{
-    public LongTerm(String accountNumber, String holderName, double balance){
-        super(accountNumber, holderName, balance, 24, 0.085);
+    public LongTerm(String accountNumber, String holderName, double balance, String pinCode){
+        super(accountNumber, holderName, balance, 24, 0.085, pinCode);
     }
 
     public void applyMaturityInterest(){

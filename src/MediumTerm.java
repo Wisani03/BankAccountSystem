@@ -1,6 +1,6 @@
 public class MediumTerm extends FixedAmount{
-    public MediumTerm(String accountNumber, String holderName, double balance){
-        super(accountNumber, holderName, balance, 12, 5.0);
+    public MediumTerm(String accountNumber, String holderName, double balance, String pinCode){
+        super(accountNumber, holderName, balance, 12, 5.0, pinCode);
     }
 
     public void checkLoyaltyReward(){

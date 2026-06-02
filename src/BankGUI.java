@@ -19,10 +19,10 @@ public class BankGUI extends JFrame {
 
     public BankGUI() {
         // 1. Initialize backend account models with starting cash
-        savings = new SavingsAccount("SAV-4412", "Wisani Mabunda", 5000.0, 6.5);
-        cheque = new CurrentAccount("CHQ-5502", "Wisani Mabunda", 1000.0, 3000.0);
-        shortTerm = new ShortTerm("FIX-9901", "Tresina Mabunda", 10000.0);
-        longTerm = new LongTerm("FIX-7704", "Tresina Mabunda", 50000.0);
+        savings = new SavingsAccount("SAV-4412", "Wisani Mabunda", 5000.0, 6.5, "1234");
+        cheque = new CurrentAccount("CHQ-5502", "Wisani Mabunda", 1000.0, 3000.0, "5678");
+        shortTerm = new ShortTerm("FIX-9901", "Tresina Mabunda", 10000.0, "1111");
+        longTerm = new LongTerm("FIX-7704", "Tresina Mabunda", 50000.0, "2222");
 
         // Window Border Setup
         setTitle("Wimab Bank *** Premium Dashboard");

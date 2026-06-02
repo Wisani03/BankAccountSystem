@@ -3,8 +3,8 @@ public class FixedAmount extends BankAccount {
     protected double penaltyPercentage;
 
 
-    public FixedAmount(String accountNumber, String holderName, double balance, int lockInMonths, double penaltyPercentage) {
-        super(accountNumber, holderName, balance);
+    public FixedAmount(String accountNumber, String holderName, double balance, int lockInMonths, double penaltyPercentage, String pinCode) {
+        super(accountNumber, holderName, balance, pinCode);
         this.lockInMonths = lockInMonths;
         this.penaltyPercentage = penaltyPercentage;
     }
