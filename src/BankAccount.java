@@ -1,4 +1,4 @@
-public class BankAccount {
+public abstract class BankAccount implements IBankActions{
     private String accountNumber;
     private String holderName;
     private double balance;
